@@ -97,6 +97,22 @@ h1 {
     color: #555;
 }
 
+/* Others Page Styles */
+.others-gallery .gallery-item {
+    border: 2px solid #007BFF;
+    background-color: #f0f8ff; /* Light blue background for differentiation */
+}
+
+.others-gallery .gallery-item img {
+    border-bottom: 2px solid #007BFF;
+}
+
+.others-gallery .gallery-item p {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+
 /* Contact Page Styles */
 .contact-info {
     text-align: center;
@@ -131,9 +147,10 @@ h1 {
         width: 100%;
     }
 }
+
 footer {
     text-align: center;
     padding: 10px 0;
     background-color: #333;
     color: white;
-}
+} 
