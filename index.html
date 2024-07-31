@@ -10,7 +10,6 @@
     <div class="container">
         <nav>
             <ul>
-              
                 <li><a href="motors.html">Motors</a></li>
                 <li><a href="sensors.html">Sensors</a></li>
                 <li><a href="boards.html">Boards</a></li>
@@ -19,13 +18,24 @@
             </ul>
         </nav>
         <h1>Welcome to the Electronic Components Gallery</h1>
-<p>Welcome to the Electronic Components Gallery, your one-stop destination for exploring a diverse range of electronic components. Whether you are looking for <a href="motors.html">motors</a> to power your projects, <a href="sensors.html">sensors</a> to enhance your devices' capabilities, <a href="boards.html">boards</a> to serve as the foundation for your circuits, or various <a href="others.html">other components</a> to complete your setup, we have it all. Dive into our extensive collection and find exactly what you need to bring your electronic projects to life.</p>
-    <a href="motors.html">Next—></a>
-     </div>
-    
-        <footer>
-        <p>&copy; 2024 Ariyan Haque. All rights reserved.</p>
+        <p>Welcome to the Electronic Components Gallery, your one-stop destination for exploring a diverse range of electronic components. Whether you are looking for <a href="motors.html">motors</a> to power your projects, <a href="sensors.html">sensors</a> to enhance your devices' capabilities, <a href="boards.html">boards</a> to serve as the foundation for your circuits, or various <a href="others.html">other components</a> to complete your setup, we have it all. Dive into our extensive collection and find exactly what you need to bring your electronic projects to life.</p>
+        <a href="motors.html">Next—></a>
         
+        <!-- Search form -->
+        <form id="search-form">
+            <input type="text" id="search-query" placeholder="Search for components...">
+            <button type="submit">Search</button>
+        </form>
+
+        <!-- Search results -->
+        <div id="search-results"></div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2024 Ariyan Haque. All rights reserved.</p>
     </footer>
+
+    <!-- JavaScript to handle search -->
+    <script src="search.js"></script>
 </body>
 </html>
