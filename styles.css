@@ -154,3 +154,35 @@ footer {
     background-color: #333;
     color: white;
 }
+/* Add this in your styles.css file */
+#search-form {
+    margin-bottom: 20px;
+}
+
+#search-query {
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+#search-results ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#search-results li {
+    margin-bottom: 10px;
+}
+
+#search-results a {
+    text-decoration: none;
+    color: blue;
+}
+
+#search-results a:hover {
+    text-decoration: underline;
+}
