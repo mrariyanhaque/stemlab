@@ -19,7 +19,7 @@ function performSearch() {
         'index': 'index.html',
         'jumper': 'jumper.html',
         'resistor': 'resistor.html',
-       
+        
     };
 
     let found = false;
