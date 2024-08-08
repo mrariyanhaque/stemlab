@@ -19,12 +19,11 @@ function performSearch() {
         'index': 'index.html',
         'jumper': 'jumper.html',
         'resistor': 'resistor.html',
-        'breadboard': 'breadboard.html',
-        'voltage': 'voltage.html',
-        'amp': 'amp.html'
+      
     };
-    
+
     let found = false;
+    let redirectPage = null;
 
     // Clear previous highlights
     images.forEach(img => img.classList.remove('highlight'));
@@ -39,19 +38,21 @@ function performSearch() {
         }
     });
 
-    // Redirect based on search query
+    // Determine the page to redirect to based on the query
     for (const [key, url] of Object.entries(pages)) {
         if (query.includes(key)) {
-            setTimeout(() => {  // Delay redirect to allow image highlight
-                if (!found) {
-                    window.location.href = url;
-                }
-            }, 1000);  // Adjust delay if necessary
-            return;
+            redirectPage = url;
+            break;
         }
     }
 
-    if (!found) {
+    if (redirectPage) {
+        setTimeout(() => {  // Delay redirect to allow image highlight
+            if (!found) {
+                window.location.href = redirectPage;
+            }
+        }, 1000);  // Adjust delay if necessary
+    } else if (!found) {
         alert('No results found for: ' + query);
     }
 }
