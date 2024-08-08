@@ -161,7 +161,7 @@ footer {
 }
 
 .search-container input[type="text"] {
-    width: 80%;
+    width: 100%;
     padding: 10px;
     font-size: 16px;
     border-radius: 4px;
@@ -173,12 +173,12 @@ footer {
     font-size: 16px;
     border: none;
     border-radius: 4px;
-    background-color: #007BFF;
+    background-color: green;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .search-container button:hover {
-    background-color: #0056b3;
+    background-color: green;
 }
