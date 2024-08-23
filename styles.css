@@ -186,3 +186,15 @@ footer {
 img.highlight {
     border: 2px solid #007BFF;
 }
+/* Contact Us Images */
+.contact-us-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-img img {
+    width: 24px;
+    height: 24px;
+    margin: 5px;
+}
